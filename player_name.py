@@ -2,11 +2,11 @@
 """
 日本ハム選手データ抽出
 """
-__author__ = "作者 <mail@example.com>"
-__status__ = "production"
+__author__ = "hiroshi kudo <mail@example.com>"
+# TODO __status__ = "production"
 __version__ = "0.0.1"
-__date__ = "01 November 2011"
-DATA_TEST = '変数'
+__date__ = "14 June 2018"
+# TODO DATA_TEST = '変数'
 
 from sys import argv
 import requests
