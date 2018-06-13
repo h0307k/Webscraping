@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor user
+actor S3
+actor DB
+
+rectangle 日本ハムファイターズ選手データ {
+  user --> (1.ホームページより投手データを取得する)
+  user --> (2.ホームページより野手データを取得する)
+  user --> (3.取得したデータをcsvへ書き出す)
+  user --> (4.CSVをS3へ保存する)
+  (4.CSVをS3へ保存する) --> S3
+  (5.CSVをRDSへ登録する) --> DB
+}
+@enduml
